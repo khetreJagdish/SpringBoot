@@ -1,7 +1,8 @@
-def workspace
+
 
     
 pipeline {
+    def workspace
     agent any
 
     stages {
