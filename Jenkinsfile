@@ -2,7 +2,6 @@
 
     
 pipeline {
-    def workspace
     agent any
 
     stages {
@@ -10,7 +9,6 @@ pipeline {
             steps {
                 echo 'Building..'
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/khetreJagdish/SpringBoot.git']]])
-        workspace = pwd()
             }
         }
         stage('Test') {
