@@ -25,6 +25,7 @@ public class ErrorDetails {
 		this.timestamp = timestamp;
 	}
 	public String getMessage() {
+		System.out.println("Github comment");
 		return message;
 	}
 	public void setMessage(String message) {
