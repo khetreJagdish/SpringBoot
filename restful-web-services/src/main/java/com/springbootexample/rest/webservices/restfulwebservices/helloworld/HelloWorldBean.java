@@ -1,7 +1,4 @@
-package com.springbootexample.rest.webservices.restfulwebservices;
-
-import com.fasterxml.jackson.annotation.JsonAutoDetect;
-import com.fasterxml.jackson.annotation.JsonAutoDetect.Visibility;
+package com.springbootexample.rest.webservices.restfulwebservices.helloworld;
 
 public class HelloWorldBean {
 
