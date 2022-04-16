@@ -36,6 +36,8 @@ public class UserResource {
 			if(user == null)
 				throw new UserNotFoundException("User not found with id :"+id);
 			
+			//Implementation for HATEOAS (Hypermedia as the Engine of Application State)
+			
 			EntityModel<User> entityModel = EntityModel.of(user);
 			WebMvcLinkBuilder linkToUser = linkTo(methodOn(this.getClass()).retrievAllUsers());
 			entityModel.add(linkToUser.withRel("all-users"));
